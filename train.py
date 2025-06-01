@@ -39,7 +39,7 @@ with tqdm(total=len(steps)) as pbar:
     pbar.update(1)
 
     # Step 4: Train-test split
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=67)
     time.sleep(0.2)
     pbar.update(1)
 
