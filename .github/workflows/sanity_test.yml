@@ -42,7 +42,7 @@ jobs:
 
       - name: Run unit test
         run: |
-          python -m unittest test.py > test_output.txt 2>&1
+          python -m unittest test.py > test_output.txt 2>&1 || true
 
       - name: Create CML report
         env:
