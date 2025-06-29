@@ -1,4 +1,4 @@
-# ✅ Iris Model Sanity Test (CI-enabled with DVC)
+# ✅ Iris Model Sanity Test (CI-enabled with DVC)    
 
 This repository sets up a CI pipeline for sanity testing a Decision Tree classifier trained on the Iris dataset. All large files such as data and models are tracked via **DVC**, and not committed directly to the repository.
 
