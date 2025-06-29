@@ -1,2 +1,4 @@
 /data
 /model.pkl
+.env/
+/samples/sample.csv

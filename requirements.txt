@@ -3,3 +3,5 @@ numpy
 scikit-learn
 joblib
 tqdm
+dvc-gs
+unittest
