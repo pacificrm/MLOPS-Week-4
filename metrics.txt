@@ -1,6 +1,16 @@
 Train size: 128
 Validation size: 32
+
 Train Accuracy: 0.9844
 Validation Accuracy: 0.9688
 Train Log Loss: 0.0325
 Validation Log Loss: 1.1607
+
+Train F1 Score: 0.9848
+Validation F1 Score: 0.9691
+Train Precision: 0.9861
+Validation Precision: 0.9744
+Train Recall: 0.9841
+Validation Recall: 0.9667
+Train AUC: 0.9992
+Validation AUC: 0.9706
