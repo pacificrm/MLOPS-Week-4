@@ -1,4 +1,4 @@
 [core]
     remote = myremote
 ['remote "myremote"']
-    url = gs://just-skyline-461512-a8-dvc-repo-week4
+    url = gs://just-skyline-461512-a8-dvc-repo-week8

@@ -23,8 +23,8 @@ class TestModelAccuracy(unittest.TestCase):
         acc = accuracy_score(y_true, y_pred)
 
         # Save metric
-        with open("metrics.txt", "w") as f:
-            f.write(f"Sample Accuracy: {acc:.4f}\n")
+        # with open("metrics.txt", "w") as f:
+            # f.write(f"Sample Accuracy: {acc:.4f}\n")
 
         # Assert perfect accuracy
         self.assertEqual(acc, 1.0, f"Expected 100% accuracy, got {acc:.4f}")

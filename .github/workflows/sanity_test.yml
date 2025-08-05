@@ -25,6 +25,7 @@ jobs:
 
       - name: Install dependencies
         run: |
+          set -e
           pip install -r requirements.txt
 
       - name: Authenticate to GCP
@@ -37,11 +38,13 @@ jobs:
 
       - name: Pull data and model from DVC
         run: |
+          set -e
           dvc pull model.pkl
           dvc pull samples/sample.csv
 
       - name: Run unit test
         run: |
+          set -e
           python -m unittest test.py > test_output.txt 2>&1 || true
 
       - name: Create CML report
@@ -53,6 +56,10 @@ jobs:
           echo "\`\`\`" >> report.md
           cat test_output.txt >> report.md
           echo "\`\`\`" >> report.md
+
           echo "## Metrics" >> report.md
+          echo "\`\`\`" >> report.md
           cat metrics.txt >> report.md
+          echo "\`\`\`" >> report.md
+
           cml comment create --publish report.md
