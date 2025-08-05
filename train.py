@@ -23,7 +23,7 @@ steps = [
 
 with tqdm(total=len(steps)) as pbar:
     # Step 1: Load train and validation datasets
-    train_df = pd.read_csv('data/train_iris.csv')
+    train_df = pd.read_csv('data/iris_train_poison.csv')
     val_df = pd.read_csv('data/val_iris.csv')
     time.sleep(0.2)
     pbar.update(1)
