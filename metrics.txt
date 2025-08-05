@@ -1,6 +1,6 @@
-Train size: 112
-Test size: 48
-Train Accuracy: 1.0000
-Test Accuracy: 0.9583
-Train Log Loss: 0.0000
-Test Log Loss: 1.5018
+Train size: 128
+Validation size: 32
+Train Accuracy: 0.9844
+Validation Accuracy: 0.9688
+Train Log Loss: 0.0325
+Validation Log Loss: 1.1607
